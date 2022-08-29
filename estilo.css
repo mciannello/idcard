@@ -1,0 +1,128 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto+Serif:ital,opsz,wght@0,8..144,200;0,8..144,700;1,8..144,100&family=Roboto:wght@100;400&display=swap');
+:root {
+    --claret: #89023eff;
+    --fuzzy-wuzzy: #cc7178ff;
+    --pale-pink: #ffd9daff;
+    --misty-rose: #f3e1ddff;
+    --tea-green: #c7d9b7ff;
+    --misty-rosa: hsla(11, 48%, 91%, 0.8);
+    --gray: #534b52;
+    
+}
+* {
+    box-sizing: content-box;
+}
+
+body{
+        font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    padding-top: 20px;
+    padding-bottom:30px;
+    margin-left: 35%;
+    margin-top: 0.5%;
+    text-align: center;
+    border: 0.5px solid var(--onyx);
+    background-color: var(--misty-rosa) ;
+    border-radius: 5%;
+   
+}
+.container .todo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+.container .todo #info{
+    width: 90%;
+    margin-left: 5%;
+}
+
+h1 {
+    font-family: 'Roboto Serif', serif;
+    font-weight: 700;
+    color: var(--gray);
+    -webkit-text-stroke: 0.2px var(--onyx);
+    text-align: center;
+    width: 100%;
+    background-color: var(--pale-pink);
+    padding: 10px 0 10px 0;
+    
+}
+#foto{
+    position: relative;
+    box-sizing: box-shadow;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border-width: 50px;
+    background-color: white;
+    background-image: url(./img/perfil.png);
+    background-size: cover;
+    margin: 0 auto;
+    -webkit-filter: grayscale(1); 
+    filter: gray; 
+    filter: grayscale(1);
+    
+}
+.apti{
+    width: 50%;
+    margin-left: 50px;
+}
+.apti li {
+    list-style: url(./img/give-love.png);
+    text-align: left;
+
+}
+.botonera {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    font-size: 3em;
+}
+.botonera li {
+    list-style: none;
+    
+}
+.bg_color {
+    z-index: -999;
+    width: 100%;
+    height: 20px;
+    background-color: d--metallic-seaweedbd;
+    position: absolute;
+    top: 0;
+}
+
+.wave{
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    background-repeat: no-repeat;
+    z-index: -1000;
+}
+.w1{
+    top: -10px;
+    background-image: url(./img/wave.svg);
+    
+}
+.w2{
+    top:-5px;
+    background-image: url(./img/waver.svg);
+    z-index: -1001;
+}
+a{
+    color: var(--gray);
+}
+a:hover{
+    color: var(--fuzzy-wuzzy);
+}
